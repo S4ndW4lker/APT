@@ -5,6 +5,8 @@ exfiltrate information from the victim. (here is the english traduction of the [
 
 - **OCEANMAP** is a malicious program developed using the C# programming language. The main functionality is to execute commands using cmd.exe. The IMAP protocol is used as a control channel. Commands, in base64-encoded form, are contained in the “Drafts” of the corresponding mailbox directories; each of the drafts contains the name of the computer, the user name and the OS version. The results of the commands are stored in the inbox directory. Implemented a configuration update mechanism (command validation interval, addresses, and authentication data of mail accounts), which involves patching the backdoor executable file and restarting the process. Persistence is ensured by creating . URL file ‘VMSearch.url’ in the startup directory.
 
+- **STEELHOOK** is a PowerShell script that steals Internet browser data (“Login Data”, “Local State”) and DPAPI master key by sending them to the management server using an HTTP POST request in base64-encrypted form.
+
 I started my analysis afther seen this [photograph](./twitter-post.jpg) on twitter, showing a possible connection between the the DarkCasino attack and the APT28's one. In the end there was none, but something
 hidden behind that ip was even more intresting (here is the complete [twitter post](https://twitter.com/BaoshengbinCumt/status/1762657919504732527)).
 
@@ -18,8 +20,10 @@ The persistence of the backdoor is ensured by the creation of the 'SysUpdate' ke
 APT28: From Initial Damage to Domain Controller Threats in an Hour (CERT-UA#8399)
 ```
 
-In the IoC contains three more files that are:
+The IoC contains three more files that are:
 
-- 19d0c55ac466e4188c4370e204808ca0bc02bba480ec641da8190cb8aee92bdc.lnk
-- VMSearch.exe
-- KFP.311.152.2023.pdf.lnk
+- *19d0c55ac466e4188c4370e204808ca0bc02bba480ec641da8190cb8aee92bdc.lnk*
+- *VMSearch.exe* (OCEANMAP)
+- *KFP.311.152.2023.pdf.lnk*
+
+In the end on 
