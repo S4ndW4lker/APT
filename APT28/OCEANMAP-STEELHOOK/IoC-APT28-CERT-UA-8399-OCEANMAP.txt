@@ -1,4 +1,4 @@
-Indicators of Compromise CERT-UA#8399
+Indicators of Compromise
 ==========================================================
 
 [IPv4]
