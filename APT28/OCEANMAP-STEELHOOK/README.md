@@ -38,3 +38,4 @@ In the end on 15.03.2024 a complete view of the OCEANMAP/STEELHOOK malware campa
 |[APT28: From Initial Damage to Domain Controller Threats in an Hour (CERT-UA#8399)](https://medium.com/cyberscribers-exploring-cybersecurity/apt28-from-initial-damage-to-domain-controller-threats-in-an-hour-cert-ua-8399-1944dd6edcdf)|
 |[Complete IoC](./IoC-APT28-CERT-UA-8399-OCEANMAP.txt)|
 |[Infection Chain](./Infection-chain-APT28.png)|
+|[Schmouni's VirusTotal Graph: APT28: From Initial Damage to Domain Controller Threats in an Hour (CERT-UA#8399)](https://www.virustotal.com/graph/g2e306f44387a4aa5a1245768e8169b11b9d6a4d594a143599ea1a05629df6c57)]|
