@@ -26,4 +26,10 @@ The IoC contains three more files that are:
 - *VMSearch.exe* (OCEANMAP)
 - *KFP.311.152.2023.pdf.lnk*
 
-In the end on 
+In the end on 15.03.2024 a complete view of the OCEANMAP/STEELHOOK malware campaign arrived form [IBM XForce](https://securityintelligence.com/x-force/itg05-leverages-malware-arsenal/).
+
+## Resourches
+
+|Useful resourches|
+|---------------|
+|hellp|
