@@ -7,7 +7,7 @@ exfiltrate information from the victim. (here is the english traduction of the [
 
 - **STEELHOOK** is a PowerShell script that steals Internet browser data (“Login Data”, “Local State”) and DPAPI master key by sending them to the management server using an HTTP POST request in base64-encrypted form.
 
-I started my analysis afther seen this [photograph](./twitter-post.jpg) on twitter, showing a possible connection between the the DarkCasino attack and the APT28's one. In the end there was none, but something
+I started my analysis afther seen this [photograph](./twitter-post.jpg) on twitter, showing a possible connection between the DarkCasino attack and the APT28's one. In the end there was none, but something
 hidden behind that ip was even more intresting (here is the complete [twitter post](https://twitter.com/BaoshengbinCumt/status/1762657919504732527)).
 
 So I started digging around trying to find more informations. Firstly I found a [collection](https://www.virustotal.com/gui/collection/4fca51117f88d8172e0ea97d2d2878271a3135327edf248511b7e8d777a252d9) of IoCs on VirusTotal tied to the ip in the photograph: **194[.]126[.]178[.]8** . I started analyzing the files, trying to find *Client.py* that was also in the photo. Then I read more about this particular file from a comment of [Schmouni](https://www.virustotal.com/gui/user/Schmouni) on VirusTotal. This is the comment:
