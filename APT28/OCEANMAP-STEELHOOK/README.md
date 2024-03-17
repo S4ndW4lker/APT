@@ -32,7 +32,7 @@ In the end on 15.03.2024 a complete view of the OCEANMAP/STEELHOOK malware campa
 
 |Useful resourches|
 |---------------|
-|[VirusTotal Graph: APT28 Rabbit Hole 1: OCEANMAP & STEELHOOK]()https://www.virustotal.com/graph/g7957d299488c41f7829f4eca499f6577cdc49e36f14b4f3bbb54ebe89c2b714d|
+|[VirusTotal Graph: APT28 Rabbit Hole 1: OCEANMAP & STEELHOOK](https://www.virustotal.com/graph/g7957d299488c41f7829f4eca499f6577cdc49e36f14b4f3bbb54ebe89c2b714d)|
 |[HivePro's Weekly threat digest](https://www.hivepro.com/wp-content/uploads/2024/01/Weekly-Threat-Digest-1-January-to-7-January-2024.pdf)|
 |[IBM XForce article](https://securityintelligence.com/x-force/itg05-leverages-malware-arsenal/)|
 |[APT28: From Initial Damage to Domain Controller Threats in an Hour (CERT-UA#8399)](https://medium.com/cyberscribers-exploring-cybersecurity/apt28-from-initial-damage-to-domain-controller-threats-in-an-hour-cert-ua-8399-1944dd6edcdf)|
