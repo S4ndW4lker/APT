@@ -7,7 +7,7 @@ exfiltrate information from the victim. (here is the english traduction of the [
 
 - **STEELHOOK** is a PowerShell script that steals Internet browser data (“Login Data”, “Local State”) and DPAPI master key by sending them to the management server using an HTTP POST request in base64-encrypted form.
 
-I started my analysis afther seeing this [photograph](./Twitter-post.jpg) on twitter, showing a possible connection between the DarkCasino attack and the APT28's one. In the end there was none, but something
+I started my analysis after seeing this [photograph](./Twitter-post.jpg) on twitter, showing a possible connection between the DarkCasino attack and the APT28's one. In the end there was none, but something
 hidden behind that ip was even more intresting (here is the complete [twitter post](https://twitter.com/BaoshengbinCumt/status/1762657919504732527)).
 
 So I started digging around trying to find more informations. Firstly I found a [collection](https://www.virustotal.com/gui/collection/4fca51117f88d8172e0ea97d2d2878271a3135327edf248511b7e8d777a252d9) of IoCs on VirusTotal tied to the ip in the photograph: **194[.]126[.]178[.]8** . I started analyzing the files, trying to find *Client.py* that was also in the photo. Then I read more about this particular file from a comment of [Schmouni](https://www.virustotal.com/gui/user/Schmouni) on VirusTotal. This is the comment:
@@ -36,4 +36,5 @@ In the end on 15.03.2024 a complete view of the OCEANMAP/STEELHOOK malware campa
 |[HivePro's Weekly threat digest](https://www.hivepro.com/wp-content/uploads/2024/01/Weekly-Threat-Digest-1-January-to-7-January-2024.pdf)|
 |[IBM XForce article](https://securityintelligence.com/x-force/itg05-leverages-malware-arsenal/)|
 |[APT28: From Initial Damage to Domain Controller Threats in an Hour (CERT-UA#8399)](https://medium.com/cyberscribers-exploring-cybersecurity/apt28-from-initial-damage-to-domain-controller-threats-in-an-hour-cert-ua-8399-1944dd6edcdf)|
-|[Complete IoC]()|
+|[Complete IoC](./IoC-APT28-CERT-UA-8399-OCEANMAP.txt)|
+|[Infection Chain](./Infection-chain-APT28.png)|
