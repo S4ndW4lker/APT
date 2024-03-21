@@ -8,6 +8,8 @@ This malware variant, unlike [INDUSTROYER](https://cyberlaw.ccdcoe.org/wiki/Indu
 
 In addition to Industroyer2, Sandworm used several destructive malware families including CaddyWiper, ORCSHRED, SOLOSHRED and AWFULSHRED. We first discovered CaddyWiper on 2022-03-14 when it was used against a Ukrainian bank – see our [Twitter thread about CaddyWiper](https://twitter.com/ESETresearch/status/1503436420886712321). A variant of CaddyWiper was used again on 2022-04-08 14:58 against the Ukrainian energy provider previously mentioned.
 
+![Malwares deployed](./malwares-deployed.png)
+
 Industroyer2 was deployed as a single Windows executable named `108_100.exe` and executed using a scheduled task on 2022-04-08 at 16:10:00 UTC. It was compiled on 2022-03-23, according to the PE timestamp, suggesting that attackers had planned their attack for more than two weeks.
 
 Before connecting to the targeted devices, the malware terminates a legitimate process that is used in standard daily operations. In addition to that, it renames this application by adding .MZ to the filename. It does so in order to prevent automatic re-start of this legitimate process.
