@@ -1,0 +1,92 @@
+Indicators of Compromise INDUSTROYER2
+==========================================================
+
+[IPv4]
+91.245.255[.]243
+195.230.23[.]19
+
+[MD5]
+71b2ad584bfb94c006c648e401efeead
+2315038eaf78877f96279f0288b5980b iec104.dll
+7c05da2e4612fca213430b6c93e76b06 40_115.exe
+069bea0731d27a9ab65daf45bfde75bf
+73561d9a331c1d8a334ec48dfd94db99 wobf.sh (AwfulShred)
+9ec8468dd4a81b0b35c499b31e67375e {zrada.exe, peremoga.exe, vatt.exe} (ArguePatch)
+1938380a81a23b8b1100de8403b583a7 pa.pay (TailJump)
+b63b9929b8f214c4e8dcff7956c87277 {caddywiper.bin, outputfile.bin} (CaddyWiper)
+
+[SHA256]
+ea16cb89129ab062843c84f6c6661750f18592b051549b265aaf834e100cd6fc
+557113044b11c3b9f5915d41e69464ce7d4e8efa25ff0da27e50a65d2f504352 iec104.dll
+d69665f56ddef7ad4e71971f06432e59f1510a7194386e5f0e8926aea7b88e00 40_115.exe
+3851a064aabab557ce162e01a77681b3954b006117edd0563edd2b3e5a082ace
+bcdf0bd8142a4828c61e775686c9892d89893ed0f5093bdc70bde3e48d04ab99 wobf.sh (AwfulShred)
+cda9310715b7a12f47b7c134260d5ff9200c147fc1d05f030e507e57e3582327 {zrada.exe, peremoga.exe, vatt.exe} (ArguePatch)
+1724a0a3c9c73f4d8891f988b5035effce8d897ed42336a92e2c9bc7d9ee7f5a pa.pay (TailJump)
+fc0e6f2effbfa287217b8930ab55b7a77bb86dbd923c0e8150551627138c9caa {caddywiper.bin, outputfile.bin} (CaddyWiper)
+43d07f28b7b699f43abd4f695596c15a90d772bfbd6029c8ee7bc5859c2b0861 sc.sh (OrcShred)
+87ca2b130a8ec91d0c9c0366b419a0fce3cb6a935523d900918e634564b88028 wsol.sh (SoloShred)
+7062403bccacc7c0b84d27987b204777f6078319c3f4caa361581825c1a94e87 108_10.exe (Industroyer2)
+
+[COMMANDS]
+C:\Users\peremoga.exe JRIBDFIMCQAKVBBP
+C:\Users\pa1.pay
+reg save HKLM\SYSTEM C:\Users\Public\sys.reg /y
+reg save HKLM\SECURITY C:\Users\Public\sec.reg /y
+reg save HKLM\SAM C:\Users\Public\sam.reg /y
+\\%DOMAIN%\sysvol\%DOMAIN%\Policies\%GPO
+ID%\Machine\zrada.exe
+\\%DOMAIN%\sysvol\%DOMAIN%\Policies\%GPO
+ID%\Machine\pa.pay
+C:\Windows\System32\rundll32.exe
+C:\windows\System32\comsvcs.dll MiniDump %PID%
+C:\Users\Public\mem.dmp full
+C:\Windows\Temp\link.ps1
+C:\Users\peremoga.exe
+C:\Users\pa1.pay
+C:\Dell\vatt.exe
+C:\Dell\pa.pay
+C:\Dell\108_100.exe
+C:\tmp\cdel.exe
+
+[CONTACTED IPs]
+10.82.40.105	
+13.107.12.50	
+192.168.0.1	
+192.168.121.2
+192.168.122.2	
+192.229.211.108
+20.99.132.105	
+20.99.133.109
+20.99.184.37
+23.216.147.64
+95.101.28.33	
+95.101.28.49
+13.107.21.200	
+204.79.197.200
+10.82.40.105	
+13.107.4.50	
+172.64.149.23
+184.25.191.235		
+20.82.209.183			
+20.99.185.48
+20.99.186.246
+23.216.147.76 
+
+[CONTACTED DOMAINS]
+img-prod-cms-rt-microsoft-com[.]akamaized[.]net
+tse1[.]mm[.]bing[.]net
+fp2e7a[.]wpc[.]phicdn[.]net
+fp2e7a[.]wpc[.]2be4[.]phicdn[.]net
+arc[.]msn[.]com
+crt[.]sectigo[.]com
+query[.]prod[.]cms[.]rt[.]microsoft[.]com
+sectigo[.]com
+api[.]apple-cloudkit[.]com
+apple-finance[.]query[.]yahoo[.]com
+cs9[.]wac[.]phicdn[.]net
+gateway[.]icloud[.]com
+
+[CONTACTED URLs]
+hxxp[://]crt[.]sectigo[.]com/SectigoPublicCodeSigningRootR46[.]p7c
+hxxp[://]crt[.]sectigo[.]com/SectigoPublicCodeSigningCAR36[.]crt
