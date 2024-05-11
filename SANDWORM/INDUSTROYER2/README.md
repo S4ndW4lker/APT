@@ -4,7 +4,7 @@ First seen in 2022, it's a malware that targets specifically ICS, with the aim t
 
 This malware variant, unlike [INDUSTROYER](https://cyberlaw.ccdcoe.org/wiki/Industroyer_%E2%80%93_Crash_Override_(2016)) used in 2016 to attack Ukraine’s national power company (Ukrenergo), allows actors to embed customized configurations that modify the malware’s behavior to specific intelligent electronic devices (IEDs) (e.g., protection relays, merging units, etc.) within the target environment.
 
-## Tecnical analysis of [welivesecurity.com](https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/)
+## Technical analysis of [welivesecurity.com](https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/)
 
 In addition to Industroyer2, Sandworm used several destructive malware families including CaddyWiper, ORCSHRED, SOLOSHRED and AWFULSHRED. We first discovered CaddyWiper on 2022-03-14 when it was used against a Ukrainian bank – see our [Twitter thread about CaddyWiper](https://twitter.com/ESETresearch/status/1503436420886712321). A variant of CaddyWiper was used again on 2022-04-08 14:58 against the Ukrainian energy provider previously mentioned.
 
